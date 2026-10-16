@@ -1,0 +1,20 @@
+# Syllabus / class-schedule input file
+# ---------------------------------------------------------------------
+# One class meeting per line, pipe-delimited:
+#   CODE|TITLE|LECTURER_ID|DAYS|START|END|ROOM
+#
+# CODE         short course code, no spaces (e.g. COSC369)
+# TITLE        human-readable course title
+# LECTURER_ID  must match an ID in faculty_info.txt
+# DAYS         subset of MTWRF (M=Mon,T=Tue,W=Wed,R=Thu,F=Fri), no spaces
+# START, END   24-hour "HH:MM" meeting start/end time
+# ROOM         building/room label
+#
+# Lines starting with '#' and blank lines are ignored.
+# ---------------------------------------------------------------------
+COSC631|Database Management|jsmith|W|17:00|19:30|CS 313
+COSC369|Software Engineering I|jsmith|TR|09:30|10:45|CS 108
+COSC330|Systems Programming I|jsmith|MW|09:30|10:45|CS 311
+
+COSC201|Data Structures|amendez|MWF|10:00|10:50|CS 201
+COSC475|Artificial Intelligence|amendez|TR|13:00|14:15|CS 220

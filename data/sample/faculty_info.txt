@@ -1,0 +1,22 @@
+# Faculty / professor-information input file
+# ---------------------------------------------------------------------
+# One professor per line, pipe-delimited:
+#   ID|DISPLAY_NAME|DEPARTMENT|DAYTIME_END|EVENING_LEN|EVENING_CUTOFF
+#
+# ID              short key, matches LECTURER_ID in class_schedule.txt
+# DISPLAY_NAME    name as it should appear on the generated report
+# DEPARTMENT      department name
+# DAYTIME_END     "HH:MM" - a daytime office-hour block runs from the
+#                 end of the last pre-evening class of the day until
+#                 this clock time
+# EVENING_LEN     minutes - length of the office-hour block placed
+#                 immediately before an evening class
+# EVENING_CUTOFF  "HH:MM" - a class starting at/after this time counts
+#                 as an "evening" class for office-hour placement
+#
+# These three fields are the office-hours table each lecturer supplies:
+# every professor can set a different policy.
+# Lines starting with '#' and blank lines are ignored.
+# ---------------------------------------------------------------------
+jsmith|Dr. J. Smith|Computer Science|13:00|120|16:00
+amendez|Dr. A. Mendez|Computer Science|12:30|90|16:00
